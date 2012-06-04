@@ -5,7 +5,7 @@
  * author: onc4hy
  * email:onc4hy@gmail.com
  * date:2012-6-5
- * http://www.github.com/hiwiki/jquery-scrollel
+ * http://github.com/hiwiki/jquery-scrollEl.git
  *
  * Dual licensed under the MIT or GPL Version 2 licenses.
  * http://www.opensource.org/licenses/mit-license.php
