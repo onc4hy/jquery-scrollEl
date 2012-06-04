@@ -12,9 +12,9 @@
  * http://www.gnu.org/licenses/gpl.html
  *
  * Usage:
-    $(".scrollToThis").scrollEl();
+    $(".toThis").scrollEl();
  
-    $(".scrollToThis").scrollEl({
+    $(".toThis").scrollEl({
  			offsetTop:40
     });
 
@@ -30,7 +30,7 @@
 
 			var defaults  = {
 				event: "click", //事件类型，其他可选参数如：mouseover
-				mode: "scrollToThis",//滚动类型，其他可选参数有：scrollToTop,scrollToPosition
+				mode: "toThis",//滚动类型，其他可选参数有：toTop,toPosition
 				offsetTop:0,//纵座标偏移位置
 				offsetLeft:0,//横座标偏移位置
 				positionTop:0,//要滚动到的位置纵座标位置
@@ -44,13 +44,13 @@
 
 			return this.each(function() {
 				$(this).bind(settings.event,function(e) {
-					if (settings.mode == "scrollToThis") {
+					if (settings.mode == "toThis") {
 						positionTop = parseInt($(this).offset().top) - settings.offsetTop;
 						positionLeft = parseInt($(this).offset().left) - settings.offsetLeft;
-					}else if (settings.mode == "scrollToTop") {
+					}else if (settings.mode == "toTop") {
 						positionTop = 0 - settings.offsetTop;
 						positionLeft = 0 - settings.offsetLeft;
-					}else if (settings.mode == "scrollToPostion") {
+					}else if (settings.mode == "toPostion") {
 						postionTop = parseInt(settings.positionTop) - settings.offsetTop;
 						positionLeft = parseInt(settings.positionLeft) - settings.offsetLeft;
 					}
